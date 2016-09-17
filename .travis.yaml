@@ -1,0 +1,17 @@
+language: objective-c
+cache: cocoapods
+rvm: 2.2.2
+osx_image: xcode8
+before_install:
+  - brew update
+  - brew upgrade xctool
+  - brew install carthage
+  - carthage bootstrap --verbose
+
+script:
+  - |
+    xcodebuild test \
+    -project Sulcus.xcodeproj \
+    -scheme Sulcus \
+    -sdk iphonesimulator \
+    -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
