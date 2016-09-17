@@ -12,7 +12,7 @@ script:
   - carthage build --no-skip-current
   - |
     xcodebuild test \
-    -project Sulcus.xcodeproj \
+    -project Sulcus/Sulcus.xcodeproj \
     -scheme Sulcus \
     -sdk iphonesimulator \
     -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
