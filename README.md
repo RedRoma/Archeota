@@ -5,6 +5,7 @@
 #### > A SWIFT LOGGER
 
 ---
+[![Build Status](https://travis-ci.org/RedRoma/Sulcus.svg?branch=develop)](https://travis-ci.org/RedRoma/Sulcus)
 
 # Download
 
