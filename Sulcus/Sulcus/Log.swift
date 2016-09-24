@@ -49,9 +49,9 @@ public class LOG
         The Sulcus logger will only print messages if this flag is enabled.
      */
     #if DEBUG
-        private static var debugEnabled = true
+        fileprivate static var debugEnabled = true
     #else
-        private static var debugEnabled = false
+        fileprivate static var debugEnabled = false
     #endif
     
     /**
@@ -77,6 +77,26 @@ public class LOG
     {
         return LOG.debugEnabled
     }
+    
+    //MARK: Color Output
+    fileprivate static var shouldDisplayColor = false
+    
+    /**
+        Enables color output from the console. This is useful if your XCode supports it.
+    */
+    public static func enableColor()
+    {
+        shouldDisplayColor = true
+    }
+    
+    /**
+        Disables color output from the console. Color should be disabled to if your XCode does not support color output,
+        otherwise it will add noise to the log statements.
+    */
+    public static func disableColor()
+    {
+        shouldDisplayColor = false
+    }
 }
 
 extension LOG
@@ -92,7 +112,9 @@ extension LOG
         if canPrint(level: .debug)
         {
             let now = dateToString(date: Date())
-            blue("\(now) - [DEBUG] - \(function) - \(message)")
+            let log = "\(now) - [DEBUG] - \(function) - \(message)"
+            
+            noColor(log)
         }
 
     }
@@ -107,7 +129,16 @@ extension LOG
         if canPrint(level: .info)
         {
             let now = dateToString(date: Date())
-            green("\(now) - [INFO] - \(function) - \(message)")
+            let log = "\(now) - [INFO] - \(function) - \(message)"
+            
+            if shouldDisplayColor
+            {
+                green(log)
+            }
+            else
+            {
+                noColor(log)
+            }
         }
     }
     
@@ -121,7 +152,16 @@ extension LOG
         if canPrint(level: .warn)
         {
             let now = dateToString(date: Date())
-            orange("\(now) - [WARN] - \(function) - \(message)")
+            let log = "\(now) - [WARN] - \(function) - \(message)"
+            
+            if shouldDisplayColor
+            {
+                orange(log)
+            }
+            else
+            {
+                noColor(log)
+            }
         }
     }
     
@@ -135,9 +175,19 @@ extension LOG
         if canPrint(level: .warn)
         {
             let now = dateToString(date: Date())
-            red("\(now) - [ERROR] - \(function) - \(message)")
+            let log = "\(now) - [ERROR] - \(function) - \(message)"
+            
+            if shouldDisplayColor
+            {
+                red(log)
+            }
+            else
+            {
+                noColor(log)
+            }
         }
     }
+
 }
 
 private extension LOG
@@ -165,7 +215,11 @@ private extension LOG
     private static let RESET_FG = ESCAPE + "fg;" // Clear any foreground color
     private static let RESET_BG = ESCAPE + "bg;" // Clear any background color
     private static let RESET = ESCAPE + ";"   // Clear any foreground or background color
-
+    
+    static func noColor<T>(_ object: T)
+    {
+        print(object)
+    }
     
     static func red<T>(_ object: T)
     {
