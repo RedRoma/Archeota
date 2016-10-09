@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEDE0DCE1D71EF0A00965CFD"
-               BuildableName = "Sulcus.framework"
-               BlueprintName = "Sulcus"
-               ReferencedContainer = "container:Sulcus.xcodeproj">
+               BuildableName = "Archeota.framework"
+               BlueprintName = "Archeota"
+               ReferencedContainer = "container:Archeota.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEDE0DD71D71EF0A00965CFD"
-               BuildableName = "SulcusTests.xctest"
-               BlueprintName = "SulcusTests"
-               ReferencedContainer = "container:Sulcus.xcodeproj">
+               BuildableName = "ArcheotaTests.xctest"
+               BlueprintName = "ArcheotaTests"
+               ReferencedContainer = "container:Archeota.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEDE0DCE1D71EF0A00965CFD"
-            BuildableName = "Sulcus.framework"
-            BlueprintName = "Sulcus"
-            ReferencedContainer = "container:Sulcus.xcodeproj">
+            BuildableName = "Archeota.framework"
+            BlueprintName = "Archeota"
+            ReferencedContainer = "container:Archeota.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEDE0DCE1D71EF0A00965CFD"
-            BuildableName = "Sulcus.framework"
-            BlueprintName = "Sulcus"
-            ReferencedContainer = "container:Sulcus.xcodeproj">
+            BuildableName = "Archeota.framework"
+            BlueprintName = "Archeota"
+            ReferencedContainer = "container:Archeota.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEDE0DCE1D71EF0A00965CFD"
-            BuildableName = "Sulcus.framework"
-            BlueprintName = "Sulcus"
-            ReferencedContainer = "container:Sulcus.xcodeproj">
+            BuildableName = "Archeota.framework"
+            BlueprintName = "Archeota"
+            ReferencedContainer = "container:Archeota.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,6 +1,6 @@
 //
 //  LOG.swift
-//  Sulcus
+//  Archeota
 //
 //  Created by Wellington Moreno on 8/27/16.
 //  Copyright © 2016 RedRoma, Inc. All rights reserved.
@@ -10,7 +10,7 @@
 import Foundation
 
 /**
-    The Sulcus Logger class.
+    The Archeota Logger class.
  
     The logger will print messages by default. To programmatically disable the Logger,
     change `Log.level`.
@@ -46,7 +46,7 @@ public class LOG
     
     
     /**
-        The Sulcus logger will only print messages if this flag is enabled.
+        The Archeota logger will only print messages if this flag is enabled.
      */
     #if DEBUG
         fileprivate static var debugEnabled = true

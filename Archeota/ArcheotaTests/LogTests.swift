@@ -1,13 +1,13 @@
 //
-//  SulcusTests.swift
-//  SulcusTests
+//  ArcheotaTests.swift
+//  ArcheotaTests
 //
 //  Created by Wellington Moreno on 8/27/16.
 //  Copyright © 2016 RedRoma, Inc. All rights reserved.
 //
 
 import XCTest
-@testable import Sulcus
+@testable import Archeota
 
 class LogTests: XCTestCase
 {
