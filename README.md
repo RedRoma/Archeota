@@ -4,6 +4,8 @@
 
 #### > A SWIFT LOGGER
 
+##### Archeota: Keeper of the archives
+
 ---
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -14,15 +16,15 @@
 ## Carthage
 
 ```
-github "RedRoma/Sulcus"
+github "RedRoma/Archeota"
 ```
 
 # API
 
-The Sulcus Logger can be accessed by importing the Sulcus package.
+The Archeota Logger can be accessed by importing the Archeota package.
 
 ```swift
-import Sulcus
+import Archeota
 ```
 
 From there, interact with the `LOG` object to print messages.
