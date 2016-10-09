@@ -14,12 +14,12 @@
 ## Carthage
 
 ```
-github "RedRoma/Sulcus"
+github "RedRoma/Archeota"
 ```
 
 # API
 
-The Sulcus Logger can be accessed by importing the Sulcus package.
+The Archeota Logger can be accessed by importing the Archeota package.
 
 ```swift
 import Sulcus
