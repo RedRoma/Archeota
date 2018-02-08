@@ -196,7 +196,7 @@ private extension LOG
     static func dateToString(date: Date) -> String
     {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM-dd HH:MM:ss.sss"
+        formatter.dateFormat = "yyyy-MM-dd HH:MM:ss"
         return formatter.string(from: date)
     }
     
