@@ -44,6 +44,13 @@ public class LOG
      */
     public static var level = LogLevel.info
     
+    /**
+        This is the time format used to format the timestamp
+     for a Log statement. By default it is set to:
+     `"yyyy-MM-dd HH:MM:ss"`.
+    */
+    public static var timeFormat = "yyyy-MM-dd HH:MM:ss"
+    
     
     /**
         The Archeota logger will only print messages if this flag is enabled.
@@ -196,7 +203,8 @@ private extension LOG
     static func dateToString(date: Date) -> String
     {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:MM:ss"
+        formatter.dateFormat = timeFormat
+        
         return formatter.string(from: date)
     }
     
