@@ -107,7 +107,7 @@ extension LOG
      
         - Parameter message : The message to print
      */
-    public static func debug(_ message: @autoclosure () -> String, function: String = #function, line: UInt = #line)
+    public static func debug(_ message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .debug)
         {
@@ -124,12 +124,12 @@ extension LOG
      
         - Parameter message: The message to print
      */
-    public static func info(_ message: @autoclosure () -> String, function: String = #function, line: UInt = #line)
+    public static func info(_ message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .info)
         {
             let now = dateToString(date: Date())
-            let log = "\(now) - [INFO] - \(function) - \(message())"
+            let log = "\(now) - [INFO] - \(function)[@\(line)] - \(message())"
             
             if shouldDisplayColor
             {
@@ -147,12 +147,12 @@ extension LOG
      
         - Parameter message: The message to print
      */
-    public static func warn(_ message: @autoclosure () -> String, function: String = #function, line: UInt = #line)
+    public static func warn(_ message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .warn)
         {
             let now = dateToString(date: Date())
-            let log = "\(now) - [WARN] - \(function) - \(message())"
+            let log = "\(now) - [WARN] - \(function)[@\(line)] - \(message())"
             
             if shouldDisplayColor
             {
@@ -170,12 +170,12 @@ extension LOG
      
         - Parameter message: The message to print
      */
-    public static func error(_ message: @autoclosure () -> String, function: String = #function, line: UInt = #line)
+    public static func error(_ message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .warn)
         {
             let now = dateToString(date: Date())
-            let log = "\(now) - [ERROR] - \(function) - \(message())"
+            let log = "\(now) - [ERROR] - \(function)[@\(line)] - \(message())"
             
             if shouldDisplayColor
             {
