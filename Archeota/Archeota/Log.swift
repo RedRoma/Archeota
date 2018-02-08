@@ -107,7 +107,7 @@ extension LOG
      
         - Parameter message : The message to print
      */
-    public static func debug(_ message: String, function: String = #function)
+    public static func debug(_ message: String, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .debug)
         {
@@ -124,7 +124,7 @@ extension LOG
      
         - Parameter message: The message to print
      */
-    public static func info(_ message: String, function: String = #function)
+    public static func info(_ message: String, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .info)
         {
@@ -147,7 +147,7 @@ extension LOG
      
         - Parameter message: The message to print
      */
-    public static func warn(_ message: String, function: String = #function)
+    public static func warn(_ message: String, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .warn)
         {
@@ -170,7 +170,7 @@ extension LOG
      
         - Parameter message: The message to print
      */
-    public static func error(_ message: String, function: String = #function)
+    public static func error(_ message: String, function: String = #function, line: UInt = #line)
     {
         if canPrint(level: .warn)
         {
