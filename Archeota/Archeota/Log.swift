@@ -60,7 +60,7 @@ public class LOG
      for a Log statement. By default it is set to:
      `"yyyy-MM-dd HH:MM:ss"`.
     */
-    public static var timeFormat = "MM/dd HH:MM:ss"
+    public static var timeFormat = "MM/dd HH:mm:ss"
     
     /**
         Decides whether log statements should include
