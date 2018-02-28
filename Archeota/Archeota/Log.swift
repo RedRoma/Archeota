@@ -57,10 +57,9 @@ public class LOG
     
     /**
         This is the time format used to format the timestamp
-     for a Log statement. By default it is set to:
-     `"yyyy-MM-dd HH:MM:ss"`.
+     for a Log statement.
     */
-    public static var timeFormat = "MM/dd HH:mm:ss"
+    public static var timeFormat = "yyyy-MM-dd HH:mm:ss"
     
     /**
         Decides whether log statements should include
