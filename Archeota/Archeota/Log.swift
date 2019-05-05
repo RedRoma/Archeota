@@ -3,7 +3,7 @@
 //  Archeota
 //
 //  Created by Wellington Moreno on 8/27/16.
-//  Copyright © 2016 RedRoma, Inc. All rights reserved.
+//  Copyright © 2019 RedRoma, Inc. All rights reserved.
 //
 
 
@@ -42,8 +42,8 @@ public class LOG
             switch self
             {
                 case .debug : return "DEBUG"
-                case .info : return "INFO"
-                case .warn : return "WARN"
+                case .info  : return "INFO"
+                case .warn  : return "WARN"
                 case .error : return "ERROR"
             }
         }

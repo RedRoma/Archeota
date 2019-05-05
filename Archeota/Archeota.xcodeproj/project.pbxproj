@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				DEDE0DD11D71EF0A00965CFD /* Archeota */,
-				DEDE0DDC1D71EF0A00965CFD /* Archeota */,
+				DEDE0DDC1D71EF0A00965CFD /* ArcheotaTests */,
 				DEDE0DD01D71EF0A00965CFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,17 +77,15 @@
 				DEDE0DD31D71EF0A00965CFD /* Info.plist */,
 				DEDE0DE91D71EF4700965CFD /* Log.swift */,
 			);
-			name = Archeota;
 			path = Archeota;
 			sourceTree = "<group>";
 		};
-		DEDE0DDC1D71EF0A00965CFD /* Archeota */ = {
+		DEDE0DDC1D71EF0A00965CFD /* ArcheotaTests */ = {
 			isa = PBXGroup;
 			children = (
 				DEDE0DDD1D71EF0A00965CFD /* LogTests.swift */,
 				DEDE0DDF1D71EF0A00965CFD /* Info.plist */,
 			);
-			name = Archeota;
 			path = ArcheotaTests;
 			sourceTree = "<group>";
 		};
@@ -169,6 +167,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = DEDE0DC51D71EF0A00965CFD;
@@ -344,7 +343,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -365,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.Archeota;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -378,7 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.ArcheotaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -391,7 +390,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.ArcheotaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
