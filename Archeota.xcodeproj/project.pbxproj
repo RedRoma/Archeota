@@ -57,9 +57,8 @@
 		1329BA122544D1C300DDD7BE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1329BA142544D1C300DDD7BE /* Archeota.h */,
+				1329BA342544D2A300DDD7BE /* Archeota */,
 				1329BA152544D1C300DDD7BE /* Info.plist */,
-				1329BA132544D1C300DDD7BE /* Log.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -67,11 +66,28 @@
 		1329BA1B2544D1CD00DDD7BE /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1329BA372544D2B300DDD7BE /* ArcheotaTests */,
 				1329BA1E2544D1CD00DDD7BE /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		1329BA342544D2A300DDD7BE /* Archeota */ = {
+			isa = PBXGroup;
+			children = (
+				1329BA142544D1C300DDD7BE /* Archeota.h */,
+				1329BA132544D1C300DDD7BE /* Log.swift */,
+			);
+			path = Archeota;
+			sourceTree = "<group>";
+		};
+		1329BA372544D2B300DDD7BE /* ArcheotaTests */ = {
+			isa = PBXGroup;
+			children = (
 				1329BA1C2544D1CD00DDD7BE /* LinuxMain.swift */,
 				1329BA1D2544D1CD00DDD7BE /* LogTests.swift */,
 			);
-			path = Tests;
+			path = ArcheotaTests;
 			sourceTree = "<group>";
 		};
 		DEDE0DC51D71EF0A00965CFD = {
