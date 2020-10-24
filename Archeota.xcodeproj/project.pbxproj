@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1329BA162544D1C300DDD7BE /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1329BA132544D1C300DDD7BE /* Log.swift */; };
+		1329BA172544D1C300DDD7BE /* Archeota.h in Headers */ = {isa = PBXBuildFile; fileRef = 1329BA142544D1C300DDD7BE /* Archeota.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1329BA1F2544D1CD00DDD7BE /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1329BA1C2544D1CD00DDD7BE /* LinuxMain.swift */; };
+		1329BA202544D1CD00DDD7BE /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1329BA1D2544D1CD00DDD7BE /* LogTests.swift */; };
 		DEDE0DD91D71EF0A00965CFD /* Archeota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDE0DCF1D71EF0A00965CFD /* Archeota.framework */; };
-		DEDE0DDE1D71EF0A00965CFD /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE0DDD1D71EF0A00965CFD /* LogTests.swift */; };
-		DEDE0DE01D71EF0A00965CFD /* Archeota.h in Headers */ = {isa = PBXBuildFile; fileRef = DEDE0DD21D71EF0A00965CFD /* Archeota.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEDE0DEA1D71EF4700965CFD /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE0DE91D71EF4700965CFD /* Log.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +25,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1329BA132544D1C300DDD7BE /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		1329BA142544D1C300DDD7BE /* Archeota.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Archeota.h; sourceTree = "<group>"; };
+		1329BA152544D1C300DDD7BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1329BA1C2544D1CD00DDD7BE /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		1329BA1D2544D1CD00DDD7BE /* LogTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTests.swift; sourceTree = "<group>"; };
+		1329BA1E2544D1CD00DDD7BE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDE0DCF1D71EF0A00965CFD /* Archeota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Archeota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEDE0DD21D71EF0A00965CFD /* Archeota.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Archeota.h; sourceTree = "<group>"; };
-		DEDE0DD31D71EF0A00965CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDE0DD81D71EF0A00965CFD /* ArcheotaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcheotaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEDE0DDD1D71EF0A00965CFD /* LogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTests.swift; sourceTree = "<group>"; };
-		DEDE0DDF1D71EF0A00965CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEDE0DE91D71EF4700965CFD /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +54,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1329BA122544D1C300DDD7BE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1329BA142544D1C300DDD7BE /* Archeota.h */,
+				1329BA152544D1C300DDD7BE /* Info.plist */,
+				1329BA132544D1C300DDD7BE /* Log.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1329BA1B2544D1CD00DDD7BE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1329BA1E2544D1CD00DDD7BE /* Info.plist */,
+				1329BA1C2544D1CD00DDD7BE /* LinuxMain.swift */,
+				1329BA1D2544D1CD00DDD7BE /* LogTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		DEDE0DC51D71EF0A00965CFD = {
 			isa = PBXGroup;
 			children = (
-				DEDE0DD11D71EF0A00965CFD /* Archeota */,
-				DEDE0DDC1D71EF0A00965CFD /* ArcheotaTests */,
+				1329BA122544D1C300DDD7BE /* Sources */,
+				1329BA1B2544D1CD00DDD7BE /* Tests */,
 				DEDE0DD01D71EF0A00965CFD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,25 +92,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEDE0DD11D71EF0A00965CFD /* Archeota */ = {
-			isa = PBXGroup;
-			children = (
-				DEDE0DD21D71EF0A00965CFD /* Archeota.h */,
-				DEDE0DD31D71EF0A00965CFD /* Info.plist */,
-				DEDE0DE91D71EF4700965CFD /* Log.swift */,
-			);
-			path = Archeota;
-			sourceTree = "<group>";
-		};
-		DEDE0DDC1D71EF0A00965CFD /* ArcheotaTests */ = {
-			isa = PBXGroup;
-			children = (
-				DEDE0DDD1D71EF0A00965CFD /* LogTests.swift */,
-				DEDE0DDF1D71EF0A00965CFD /* Info.plist */,
-			);
-			path = ArcheotaTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -96,7 +99,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDE0DE01D71EF0A00965CFD /* Archeota.h in Headers */,
+				1329BA172544D1C300DDD7BE /* Archeota.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,13 +154,11 @@
 				TargetAttributes = {
 					DEDE0DCE1D71EF0A00965CFD = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5JBF7MD4UT;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					DEDE0DD71D71EF0A00965CFD = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5JBF7MD4UT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -203,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDE0DEA1D71EF4700965CFD /* Log.swift in Sources */,
+				1329BA162544D1C300DDD7BE /* Log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDE0DDE1D71EF0A00965CFD /* LogTests.swift in Sources */,
+				1329BA202544D1CD00DDD7BE /* LogTests.swift in Sources */,
+				1329BA1F2544D1CD00DDD7BE /* LinuxMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,11 +333,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5JBF7MD4UT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Archeota/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -353,11 +355,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5JBF7MD4UT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Archeota/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,8 +374,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 5JBF7MD4UT;
-				INFOPLIST_FILE = ArcheotaTests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.ArcheotaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -385,8 +387,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 5JBF7MD4UT;
-				INFOPLIST_FILE = ArcheotaTests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.redroma.ArcheotaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
